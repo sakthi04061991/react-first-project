@@ -19,7 +19,7 @@ export const DataProvider = ({ children }) => {
     const [editBody, setEditBody] = useState('');
     const { width } = useWindowSize();
     const navigate = useNavigate();
-    const { data, fetchError, isLoading } = useAxiosFetch('http://localhost:3500/posts');
+    const { data, fetchError, isLoading } = useAxiosFetch('https://sa-json-db.netlify.app/db.json/posts');
 
     useEffect(() => {
         setPost(data);
