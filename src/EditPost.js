@@ -6,7 +6,7 @@ import DataContext from './context/DataContext';
 export const EditPost = () => {
     const {post, handleEdit, editBody, editTitle, setEditBody, setEditTitle} = useContext(DataContext);
     const {id} = useParams();
-    const posts = post.find(post => (post.id).toString() == id);
+    const posts = post.find(post => (post.id).toString() === id);
     useEffect( () => {
         if(posts){
             setEditTitle(posts.title);
