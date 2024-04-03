@@ -24,6 +24,7 @@ function App() {
           </Route>
           <Route path='/edit/:id' element={<EditPost />} />
           <Route path='/about' element={<About />} />
+          <Route path='*' element={<Missing />} />
         </Routes>
         
       </DataProvider>
