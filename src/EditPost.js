@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { useEffect } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams} from 'react-router-dom';
 import DataContext from './context/DataContext';
 
 export const EditPost = () => {
