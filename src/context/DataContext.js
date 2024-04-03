@@ -39,7 +39,7 @@ export const DataProvider = ({ children }) => {
         const id = post.length ? parseInt(post[post.length - 1].id) + 1 : 1;
         const datetime = format(new Date(), 'MMM dd, yyyy pp');
         const newPost = { id, title: postTitle, datetime, body: postBody };
-        const response = await api.post('/posts', newPost);
+        //const response = await api.post('/posts', newPost);
         const allPosts = [...post, newPost];
         setPost(allPosts);
         setPostTitle('');
